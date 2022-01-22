@@ -1,0 +1,211 @@
+.active
+{
+    text-decoration: none;
+    height: 28px;
+    border-bottom: 2px solid #3A4569;
+}
+
+#regForm
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+
+    margin-top: 100px;
+
+    width: 350px;
+    height: 520px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+
+    font-family: Roboto;
+    font-style: normal;
+
+    font-size: 1.3em;
+    line-height: 29px;
+
+    color: #3A4569;
+
+
+}
+#regOrLog
+{
+    border-bottom: 3px solid rgba(62, 88, 112, 0.75);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+#regOrLog div:first-child
+{
+    display: inline-block;
+    width: 50%;
+    height: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    border-right: 1px solid rgba(62, 88, 112, 0.75);
+}
+#regOrLog div:last-child
+{
+    display: inline-block;
+    width: 49%;
+
+    color: rgba(58, 69, 105, 0.5);;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#socialLogIn
+{
+    width: 70%;
+    height: 100px;
+
+    margin-left: 15%;
+    margin-top: 20px;
+
+    border: 2px solid rgba(62, 88, 112, 0.75);
+    border-radius: 30px;
+}
+#titleSocLogIn 
+{
+    position: relative;
+    left: 70px;
+    top: -5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: #3A4569;
+
+}
+#socLinks
+{
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 90%;
+}
+#socLinks figure
+{
+    margin: 0;
+    display: inline-block;
+    margin-left: 15px;
+    width: 55px;
+}
+#socLinks img
+{    
+    margin-left: 10px;
+    width: 30px;
+}
+#socLinks figcaption
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+ 
+    text-align: center;
+    
+    color: rgba(39, 63, 77, 0.85);
+   
+}
+
+#borderWord
+{
+    position: relative;
+    left: 40%;
+    top: 1px;
+
+    display: inline-block;
+    height: 20px;
+    width: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    
+    color: #3A4569;
+
+    background-color: white;    
+}
+#borderWord span
+{
+    padding-bottom: 10px;
+}
+
+.labelText
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(37, 57, 71, 0.6);
+}
+input
+{
+    background: rgba(193, 206, 208, 0.15);
+    box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+#policyText
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: #8C979F;
+}
+
+#formUser
+{
+    margin: 15px 40px 10px 40px ;
+    height: 55%;
+    background-color: rgb(240, 229, 229);
+}
+#confirmPolicyBlock
+{
+    display: table;
+}
+
+#confirmPolicyBlock div
+{
+    height: 100%;
+    display: table-cell;
+    line-height: 0.4;
+}
+
+#regButt
+{
+    background: #314757;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25), inset 0px 0px 40px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    
+    color: #DFF9F4;
+    padding: 5px 10px 5px 10px;
+    margin-left: 25%;
+
+}
+
+
