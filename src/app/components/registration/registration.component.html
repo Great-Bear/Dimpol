@@ -5,7 +5,7 @@
              <a routerLink="/registration" routerLinkActive="active" > Регистрация </a>
         </div>
         <div>
-                  Войти
+            <a routerLink="/authorization" class="disLink" >  Войти </a>
         </div>
     </div>
     <div id="socialLogIn" >
@@ -28,18 +28,27 @@
     </div>
     <div id="formUser">
         <form action="" >
-            <label for="login" class="labelText" >Укажите ваш email или номер телефона</label>
-            <input type="text" name="login" >
-            <br>
-            <label for="login" class="labelText" >Укажите ваш email или номер телефона</label>
-            <input type="text" name="login" >
-            <br>
-            <label for="login" class="labelText" >Укажите ваш email или номер телефона</label>
-            <input type="text" name="login" >
-            <br>
+            <div class="blockField" >
+                <label for="login" class="labelText" >Укажите ваш email или номер телефона</label>
+                <input type="text" name="login" id="login" >  
+                <span class="errorMessage" ></span>       
+            </div>
+            <div class="blockField">
+                <label for="login" class="labelText" >Введите свой пароль</label>
+                <input type="text" name="login" >
+            </div>
+            <div class="blockField">
+                <label for="login" class="labelText" >Повторите пароль</label>
+                <input type="text" name="login" >
+                <span class="errorMessage" ></span>   
+            </div>
+
             <div id="confirmPolicyBlock">
                 <div>
-                    <input type="checkbox" name="" id="">
+                    <label>
+                        <input type='checkbox'>
+                        <span></span>
+                      </label>   
                 </div>
                 <div>
                     <span id="policyText">Я соглашаюсь с правилами использования сервиса,
@@ -48,11 +57,12 @@
                     за размещение объявлений</span>
                     </div>
             </div>
-            <button type="submit" id="regButt" >Регистрация</button>
-
+            <button type="button" id="regButt" >Регистрация</button>
 
         </form>
+       
     </div>
     
 </div>
+
 
