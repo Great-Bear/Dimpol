@@ -5,6 +5,8 @@
 #navMainBlock
 {
     position: fixed;
+    top: 0;
+    z-index: 10;
     background: #2D384A;
     box-shadow: 0px 3px 20px 3px rgba(0, 0, 0, 0.25);
 
@@ -17,7 +19,7 @@
 {
     margin-left: auto;
     margin-right: auto;
-    width: 1250px;
+    width: 80rem;
     height: 100%;
 }
 #logo
@@ -41,7 +43,9 @@
 #searchBlock
 {
     position: relative;
-    left: 220px;
+    /*left: 220px;*/
+    left : 17.8%;
+
     top: -23px;
 
     background: #F7F8FB;
@@ -73,7 +77,9 @@
 {
     position: relative;
 
-    left: 870px;
+   /* left: 870px;*/
+   left: 70%;
+
     top: -65px;
 
     height: 30px;
