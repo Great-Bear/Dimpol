@@ -8,6 +8,9 @@ import { Page404Component } from './components/page404/page404.component';
 import { AboutComponent } from './components/about/about.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { AuthorizationComponent } from './components/authorization/authorization.component';
+import { MailconfirmComponent } from './mailconfirm/mailconfirm.component';
+
+import { HttpClientModule } from '@angular/common/http'
 
 const appRoutes: Routes =[
   { path: 'home', component: HomeComponent},
@@ -24,10 +27,13 @@ const appRoutes: Routes =[
     Page404Component,
     AboutComponent,
     RegistrationComponent,
-    AuthorizationComponent
+    AuthorizationComponent,
+    MailconfirmComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(appRoutes)
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes)
   ],
 
   providers: [],
