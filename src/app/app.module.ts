@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -8,7 +9,6 @@ import { Page404Component } from './components/page404/page404.component';
 import { AboutComponent } from './components/about/about.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { AuthorizationComponent } from './components/authorization/authorization.component';
-import { MailconfirmComponent } from './mailconfirm/mailconfirm.component';
 
 import { HttpClientModule } from '@angular/common/http'
 
@@ -28,12 +28,12 @@ const appRoutes: Routes =[
     AboutComponent,
     RegistrationComponent,
     AuthorizationComponent,
-    MailconfirmComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
 
   providers: [],

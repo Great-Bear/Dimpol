@@ -13,7 +13,6 @@ export class AppComponent {
   constructor(private httpService: HttpService) {}
 
   ngOnInit() {
-   this.httpService.getData();
   }
 
 }
