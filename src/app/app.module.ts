@@ -10,13 +10,16 @@ import { AboutComponent } from './components/about/about.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { AuthorizationComponent } from './components/authorization/authorization.component';
 
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { EmailconfirmComponent } from './components/emailconfirm/emailconfirm.component';
+
 
 const appRoutes: Routes =[
   { path: 'home', component: HomeComponent},
   { path: 'about', component: AboutComponent},
   { path: 'registration', component: RegistrationComponent},
   { path: 'authorization', component: AuthorizationComponent},
+  { path: 'emailconfirm', component: EmailconfirmComponent},
   { path: '**', component: Page404Component }
 ];
 
@@ -28,6 +31,7 @@ const appRoutes: Routes =[
     AboutComponent,
     RegistrationComponent,
     AuthorizationComponent,
+    EmailconfirmComponent,
   ],
   imports: [
     BrowserModule,

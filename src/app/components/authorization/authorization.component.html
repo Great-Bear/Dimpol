@@ -30,12 +30,12 @@
         <form action="" >
             <div class="blockField" >
                 <label for="login" class="labelText" >Укажите ваш email или номер телефона</label>
-                <input type="text" name="login" id="login" >  
+                <input type="text" name="login" id="login" [(ngModel)]="login"  >  
                 <span class="errorMessage" ></span>       
             </div>          
             <div class="blockField">
                 <label for="login" class="labelText" >Введите пароль</label>
-                <input type="text" name="login" >
+                <input type="text" name="login" [(ngModel)]="passwd" >
                 <span class="errorMessage" ></span>   
             </div>
 
@@ -50,7 +50,7 @@
                     <span id="rememberMe">Запомнить меня</span>
                     </div>
             </div>
-            <button type="button" id="regButt" >Регистрация</button>
+            <button type="button" id="regButt" (click)="sendDataAuth()" >Регистрация</button>
 
 
         </form>

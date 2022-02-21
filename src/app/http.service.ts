@@ -12,7 +12,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':  'application/json',
-    'Response-Type' : 'json'
+    'Response-Type' : 'json',
   })
 }
 
@@ -32,20 +32,31 @@ export class HttpService {
     }
   }
 
-
-
    getData() {
-      const response = this.http.get("http://localhost:5007/api/auth/TestMeth");
+      const response = this.http.get("/api/auth/TestMeth");
       response.subscribe(res => console.log("Это ответ Get:" + res));
   }
+  registerUser( data : object ){
+
+        return this.http.post("/api/auth/register", JSON.stringify( data ), httpOptions )
+                      .pipe( res => { return res;  }, 
+                        catchError(err => {   
+                          return err.message;
+                      })                
+                    )}
+
   authUser( data : object ){
+    return this.http.post("api/auth/login", JSON.stringify( data ), httpOptions )
+                .pipe( res => { return res; },                
+                  catchError(err => {   
+                    return "Server is death";
+                }) 
+              )}
 
-
-   return this.http.post("http://localhost:5007/api/auth/register", JSON.stringify( data ), httpOptions )
+  confirmEmail(data : object){
+      return this.http.post("/api/auth/confirm", JSON.stringify( data ), httpOptions )
                 .pipe( res => { return res; }, err => { return err } ) ;
-
-
   }
-  
+
 
 }
